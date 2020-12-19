@@ -7,8 +7,11 @@ use Illuminate\Http\Request;
 
 class NewsController extends Controller
 {
-    public function index($newsId){
 
-        return view('news/news');
+    public function index($NewsId){
+        $news = (new News())->getById($NewsId);
+        return view('news.news', [
+            'news' => $news
+        ]);
     }
 }
