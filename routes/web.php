@@ -13,12 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/about', function () {
-    return view('about');
-});
-Route::get('/newspage', function () {
-    return view('newspage');
-});
+Route::get('/', [
+    'uses'=>'IndexController@index'
+]);
+Route::get('/news/category', [
+    'uses'=>'News/AllCategoryController@index'
+]);
+Route::get('/news/category/{id}', [
+    'uses'=>'News/CurrentCategoryController@index'
+]);
+Route::get('/news/{id}', [
+    'uses'=>'News/NewsController@index'
+]);
+Route::get('/news/add', [
+    'uses'=>'News/AddController@index'
+]);
+
