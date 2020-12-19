@@ -28,4 +28,7 @@ Route::get('/news/{id}', [
 Route::get('/news/add', [
     'uses'=>'News/AddController@index'
 ]);
+Route::get('/auth', [
+    'uses'=>'Auth/IndexController@index'
+]);
 
