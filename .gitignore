@@ -22,3 +22,7 @@ Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
+<<<<<<< HEAD
+/.idea
+=======
+>>>>>>> 9f72bbbf357d3a8a53b300b9272aabbbbfb4e24f
