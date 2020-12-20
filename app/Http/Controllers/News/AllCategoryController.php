@@ -12,6 +12,7 @@ class AllCategoryController extends Controller
         2 => 'PHP',
         3 => 'Laravel'
     ];
+
     public function index(){
 
       return view('news.allcategory',
