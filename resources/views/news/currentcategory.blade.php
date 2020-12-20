@@ -26,6 +26,16 @@
             <div>
     Это страница новостей в категории!
             </div>
+            <div>
+                @forelse($news as $item)
+                    <h2>
+                        <a href="/news/{{$item['id']}}">{{$item['title']}}</a>
+                    </h2>
+                    <div>{{$item['content']}}</div>
+                @empty
+                    <h2>Пока что в этом разделе нет новостей</h2>
+                @endforelse
+            </div>
         </main>
     </body>
 </html>
