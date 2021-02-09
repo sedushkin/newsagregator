@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Добро пожаловать!</title>
+        <title>О проекте</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -21,10 +21,10 @@
         </style>
     </head>
     <body>
-        <main>
-            <div>
-                Добро пожаловать на наш новостной агрегатор!
-            </div>
-        </main>
+        <article>
+            <h1>О проекте</h1>
+            <p>Проект представляет собой агрегатор новостей</p>
+        </article>
+
     </body>
 </html>
